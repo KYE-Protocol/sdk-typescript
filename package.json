@@ -1,0 +1,54 @@
+{
+  "name": "@kye-protocol/sdk",
+  "version": "0.1.0-public-skeleton",
+  "description": "Official TypeScript SDK for KYE Protocol™ — the Entity Authority Protocol for AI Governance. Public-vocabulary surface today; full runtime client at v1.0 GA.",
+  "keywords": [
+    "kye-protocol",
+    "kye",
+    "authority-finality",
+    "ai-governance",
+    "ai-agent",
+    "delegation",
+    "open-banking",
+    "psd3",
+    "eu-ai-act",
+    "agentic-commerce"
+  ],
+  "homepage": "https://kye-protocol.github.io/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/KYE-Protocol/sdk-typescript.git"
+  },
+  "bugs": {
+    "url": "https://github.com/KYE-Protocol/sdk-typescript/issues"
+  },
+  "license": "Apache-2.0",
+  "author": "KYE Protocol",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "src",
+    "LICENSE",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "vitest run",
+    "lint": "eslint src test",
+    "conformance": "echo 'Conformance pack ships with v1.0 GA. See https://kye-protocol.github.io/compliance.html'"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
