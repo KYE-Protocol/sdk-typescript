@@ -33,7 +33,9 @@ export const DecisionCode = {
 } as const;
 export type DecisionCode = typeof DecisionCode[keyof typeof DecisionCode];
 
-/** Signal types emitted on the cascade bus. */
+/** Signal types emitted by the protocol's runtime control surface. The
+ *  specific signal-type enumeration and the propagation construction are
+ *  part of the patent track and are not disclosed in this repository. */
 export const SignalType = {
   STOP:       'stop',
   QUARANTINE: 'quarantine',
@@ -43,7 +45,10 @@ export const SignalType = {
 } as const;
 export type SignalType = typeof SignalType[keyof typeof SignalType];
 
-/** The six dimensions of state composed at every authorize call. */
+/** State-dimension labels used by the canonical state vector. The
+ *  specific dimension enumeration, per-dimension state alphabets, and
+ *  the composition rule used at decision time are part of the patent
+ *  track and are not disclosed in this repository. */
 export const StateDimension = {
   LIFECYCLE:  'lifecycle',
   AUTHORITY:  'authority',
